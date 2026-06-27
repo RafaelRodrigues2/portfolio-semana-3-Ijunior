@@ -1,0 +1,99 @@
+.Player-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #341773;
+    align-items: center;
+    justify-content: center;
+    width: 110vh;
+    height: 90%;
+    gap: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px #590242;
+    border-style: solid;
+    border-width: 5px;
+    border-top-style: none;
+    border-bottom-style: dashed;
+    border-color: #590242;
+    box-shadow: 0 10px 20px #590242;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #090426;
+}
+#Top-bar{
+    width: 100%;
+    height: 40px;
+    border-style: solid;
+    border-width: 5px;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-color: #590242;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+#name{
+    color: #C3A4F0;
+    vertical-align: bottom;
+}
+#profile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    border-bottom-style: groove;
+}
+
+#profile-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+    border-bottom-style: ridge;
+    border-bottom-color: #590242;
+    border-bottom-width: 5px;
+}
+
+#profile-name {
+    color: #C3A4F0;
+    text-align: center;
+}
+
+#profile-description {
+    color: #C3A4F0;
+}
+#content-info{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 3%;
+    color: #EBC4EB;
+}
+#content-info h3{
+    color: #C3A4F0;
+}
+#academic-column{
+    flex: 1;
+    border-right-style: double;
+    border-right-width: 2px;
+    border-right-color: #590242;
+    height: auto;
+}
+#professional-column{
+    flex: 1;
+}
