@@ -9,10 +9,11 @@
     gap: 40px;
     border-radius: 20px;
     box-shadow: 0 20px 60px #590242;
-    border-style: solid;
+    border-right-style: ridge;
+    border-left-style: groove;
     border-width: 5px;
     border-top-style: none;
-    border-bottom-style: dashed;
+    border-bottom-style: none;
     border-color: #590242;
     box-shadow: 0 10px 20px #590242;
 }
@@ -27,19 +28,59 @@ body {
 #Top-bar{
     width: 100%;
     height: 40px;
-    border-style: solid;
-    border-width: 5px;
-    border-top-style: dashed;
-    border-bottom-style: dashed;
+    border-width: 10px;
+    border-top-style: groove;
+    border-bottom-style: ridge;
+    border-left-style: groove;
+    border-right-style: ridge;
     border-color: #590242;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+}
+#Bottom-bar{
+    width: 100%;
+    height: 40px;
+    border-width: 10px;
+    border-top-style: ridge;
+    border-bottom-style: groove;
+    border-left-style: ridge;
+    border-right-style: groove;
+    border-color: #590242;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+#Bottom-bar ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+}
+#Bottom-bar li {
+    padding: 6px 14px;
+    border-bottom: 4px solid #590242;
+    color: #C3A4F0;
+    box-shadow: 0 5px 10px -10px #590242;
+    transition: transform 0.7s ease, box-shadow 0.7s ease;
+}
+#Bottom-bar li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px #590242;
+    border-style: ridge;
+    border-color: #590242;
+}
+#Bottom-bar a {
+    color: #F27ED3;
 }
 #name{
     color: #C3A4F0;
-    vertical-align: bottom;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 #profile {
     width: 100%;
@@ -57,15 +98,16 @@ body {
     align-items: center;
 }
 
-#profile img {
+#profile-photo img {
     width: 150px;
     height: 150px;
     border-radius: 5%;
-    border-bottom-style: ridge;
-    border-bottom-color: #590242;
+    border-bottom-style: groove;
+    border-top-style: groove;
+    border-color: #590242;
     border-bottom-width: 5px;
+    box-shadow: 0 10px 20px #590242;
 }
-
 #profile-name {
     color: #C3A4F0;
     text-align: center;
